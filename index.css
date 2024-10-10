@@ -1,0 +1,182 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family:sans-serif;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  
+}
+
+.logo img{
+  width: 100px;
+  border-radius: 20px;
+}
+
+.menu ul li{
+  display: inline-block;
+  margin: 0 15px;
+}
+.menu ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  color: #fff;
+  padding: 5px 15px;
+}
+.menu ul li a:hover{
+  background: #91613e;
+  border-radius: 30px;
+}
+
+.socials a{
+  text-decoration: none;
+  background: #91613e;
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+.header{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./img/progreso.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 120vh;
+}
+.banner_text{
+  color: #fff;
+  position: relative;
+  padding: 180px;
+  text-align: center;
+}
+
+.banner_text h1{
+  font-size: 50px;
+  margin: 0;
+}
+
+.banner_text p{
+  margin: 15px 0 40px;
+  padding: 30px;
+  font-size: 30px;
+}
+.banner_text button{
+  background: #91613e;
+  border-radius: 30px;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+footer {
+  background-color:#000; /* Fondo oscuro para contraste */
+  color: #f4f4f4; /* Texto claro */
+  padding: 1px 10px;
+  text-align: right;
+ 
+}
+
+/* Estilo para el texto de correo */
+footer p {
+  text-align: left;
+  font-size: 1.7rem;
+  
+}
+
+/* Estilo para la sección de redes */
+footer .redes {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+footer .redes a {
+  color: #91613e; /* Color de los enlaces de redes */
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #91613e; /* Borde del mismo color que el texto */
+  border-radius: 25px; /* Bordes redondeados */
+  transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el enlace */
+footer .redes a:hover {
+  background-color: #91613e; /* Fondo del enlace al pasar el cursor */
+  color: #333; /* Texto oscuro al pasar el cursor */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  footer {
+    padding: 20px 10px;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  footer .redes a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+@media (max-width:1000px){
+nav{
+  flex-direction: column;
+  align-items: flex;
+}
+.menu ul{
+  padding: 0;
+}
+.menu ul li{
+  margin: 0 15px 0 0;
+}
+.socials{
+  margin-top: 25px;
+}
+.banner_text{
+  left: 50%;
+  text-align: center;
+  width: 70%;
+}
+}
+@media(max-width:600px){
+.logo{
+  margin-top: 0;
+  font-size: 17px;
+}
+nav{
+  padding: 15px;
+}
+.menu ul li a{
+  font-size: 10px;
+  padding: 5px;
+}
+.socials{
+  display: none;
+}
+.banner_text{
+  left: 50%;
+  text-align: center;
+  width: 80%;
+}
+.banner_text h1{
+  font-size: 18px;
+}
+.banner_text p{
+  margin: 15px 0;
+  font-size: 11px;
+}
+.banner_text button{
+  font-size: 12px;
+}
+}
